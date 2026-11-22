@@ -1,0 +1,65 @@
+{
+  "layer": "silver",
+  "domain": "NOAA CPC Teleconnections",
+  "climatology_baseline": "1991-2020 (for Nino 3.4 SSTA); CDAS standardized daily indices (AO, NAO, PNA)",
+  "tables": {
+    "climate_daily.parquet": {
+      "granularity": "1 row per calendar day (continuous daily buffer 2019-2022)",
+      "primary_key": [
+        "date"
+      ],
+      "columns": [
+        {
+          "name": "date",
+          "dtype": "datetime64[ns]",
+          "unit": "ISO date",
+          "description": "Observation date"
+        },
+        {
+          "name": "ao",
+          "dtype": "float64",
+          "unit": "standardized index (dimensionless)",
+          "description": "Arctic Oscillation daily index (z1000 CDAS)"
+        },
+        {
+          "name": "nao",
+          "dtype": "float64",
+          "unit": "standardized index (dimensionless)",
+          "description": "North Atlantic Oscillation daily index (z500 CDAS)"
+        },
+        {
+          "name": "pna",
+          "dtype": "float64",
+          "unit": "standardized index (dimensionless)",
+          "description": "Pacific/North American daily index (z500 CDAS)"
+        }
+      ]
+    },
+    "enso_weekly.parquet": {
+      "granularity": "1 row per NOAA CPC week (Wednesdays, continuous 7D buffer 2019-2022)",
+      "primary_key": [
+        "source_week_date"
+      ],
+      "columns": [
+        {
+          "name": "source_week_date",
+          "dtype": "datetime64[ns]",
+          "unit": "ISO date (Wednesday)",
+          "description": "NOAA CPC weekly centered date"
+        },
+        {
+          "name": "nino34_sst",
+          "dtype": "float64",
+          "unit": "degC",
+          "description": "Nino 3.4 sea surface temperature"
+        },
+        {
+          "name": "nino34_ssta",
+          "dtype": "float64",
+          "unit": "degC",
+          "description": "Nino 3.4 sea surface temperature anomaly (1991-2020 base)"
+        }
+      ]
+    }
+  }
+}

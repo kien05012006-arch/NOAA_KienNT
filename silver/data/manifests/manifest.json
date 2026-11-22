@@ -1,0 +1,46 @@
+{
+  "pipeline_name": "NOAA_Bronze_To_Silver",
+  "pipeline_version": "1.0.0",
+  "run_timestamp": "2026-11-22T15:16:47.312357+00:00",
+  "bronze_snapshot": "ingest_date=2026-10-17",
+  "inputs": [
+    {
+      "file": "norm.daily.ao.cdas.z1000.19500101_current.csv",
+      "size_bytes": 42968,
+      "sha256": "f1abdbd6a565a753d125dd5c862ab8087a603f0c0a7d4da555e9e5d47273eb15"
+    },
+    {
+      "file": "norm.daily.nao.cdas.z500.19500101_current.csv",
+      "size_bytes": 43314,
+      "sha256": "981d9d53f72668b7e10ef3330727cc5220de0e7c7512beccf415d50693923cc3"
+    },
+    {
+      "file": "norm.daily.pna.cdas.z500.19500101_current.csv",
+      "size_bytes": 43261,
+      "sha256": "a26b728987876e58ca52d52c165a7a5ec23aa11e21d618ec756a071900e19709"
+    },
+    {
+      "file": "wksst9120.for",
+      "size_bytes": 5535,
+      "sha256": "fdbc0efbf49b36cf65495699a6c5a3cb0d563e3c4a416f6847e5873c831e2492"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "climate_daily.parquet",
+      "rows": 1461,
+      "start_date": "2019-01-01",
+      "end_date": "2022-12-31",
+      "size_bytes": 52839,
+      "sha256": "28b740fc84ad547eaca3fea51c2e49fa235ed75dfb366915fe4cf7e2bcb44e23"
+    },
+    {
+      "file": "enso_weekly.parquet",
+      "rows": 209,
+      "start_date": "2019-01-02",
+      "end_date": "2022-12-28",
+      "size_bytes": 4974,
+      "sha256": "22a02451761046facb042dc3fc6948bffa55870d2426929d74fbf9bb0ef19e9f"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "summary": {
+    "execution_time_utc": "2026-11-22T15:16:47.312357+00:00",
+    "elapsed_seconds": 0.0726,
+    "bronze_snapshot": "ingest_date=2026-10-17",
+    "tables_processed": 2,
+    "successful_tables": 2,
+    "total_daily_rows": 1461,
+    "total_enso_weekly_rows": 209,
+    "total_null_values": 0,
+    "total_sentinel_values": 0
+  },
+  "tables": [
+    {
+      "table_name": "climate_daily",
+      "source_files": [
+        "norm.daily.ao.cdas.z1000.19500101_current.csv",
+        "norm.daily.nao.cdas.z500.19500101_current.csv",
+        "norm.daily.pna.cdas.z500.19500101_current.csv"
+      ],
+      "row_count": 1461,
+      "start_date": "2019-01-01",
+      "end_date": "2022-12-31",
+      "expected_frequency": "D",
+      "is_date_continuous": true,
+      "duplicate_dates": 0,
+      "null_values": 0,
+      "sentinel_values": 0,
+      "status": "SUCCESS",
+      "column_stats": {
+        "ao": {
+          "min": -5.285021,
+          "max": 6.073015,
+          "mean": 0.161283,
+          "std": 1.589472
+        },
+        "nao": {
+          "min": -1.95174,
+          "max": 2.190778,
+          "mean": 0.01158,
+          "std": 0.777403
+        },
+        "pna": {
+          "min": -2.083555,
+          "max": 3.085629,
+          "mean": 0.079431,
+          "std": 0.822132
+        }
+      },
+      "notes": [
+        "Retains full 2019-2022 buffer to support Gold rolling aggregations without boundary NaNs."
+      ]
+    },
+    {
+      "table_name": "enso_weekly",
+      "source_files": [
+        "wksst9120.for"
+      ],
+      "row_count": 209,
+      "start_date": "2019-01-02",
+      "end_date": "2022-12-28",
+      "expected_frequency": "7D (Wednesday)",
+      "is_date_continuous": true,
+      "duplicate_dates": 0,
+      "null_values": 0,
+      "sentinel_values": 0,
+      "status": "SUCCESS",
+      "column_stats": {
+        "nino34_sst": {
+          "min": 25.0,
+          "max": 28.7,
+          "mean": 26.744976,
+          "std": 0.88306
+        },
+        "nino34_ssta": {
+          "min": -1.7,
+          "max": 1.1,
+          "mean": -0.291866,
+          "std": 0.662513
+        }
+      },
+      "notes": [
+        "All source_week_date values verified as Wednesday (dayofweek == 2).",
+        "Retains 2019 buffer required for 12-week trailing enso84 starting 2020-01-07."
+      ]
+    }
+  ]
+}

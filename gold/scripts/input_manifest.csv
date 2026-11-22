@@ -1,0 +1,4 @@
+role,filename,relative_path,size_bytes,sha256
+silver_daily,climate_daily.parquet,silver/data/climate_daily.parquet,52839,28b740fc84ad547eaca3fea51c2e49fa235ed75dfb366915fe4cf7e2bcb44e23
+silver_enso,enso_weekly.parquet,silver/data/enso_weekly.parquet,4974,22a02451761046facb042dc3fc6948bffa55870d2426929d74fbf9bb0ef19e9f
+usdm_calendar,usdm_week_dates.csv,gold/data/usdm_week_dates.csv,1571,a124a7753e2dd4ded93e1f8064c45f26e384b43e84087284459629c11d801281

@@ -1,0 +1,6 @@
+Generated UTC : 2026-11-22T15:16:47.881531+00:00
+Python        : 3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:37:53) [Clang 19.1.7 ]
+Platform      : macOS-15.5-arm64-arm-64bit
+pandas        : 2.3.3
+numpy         : 2.2.6
+pyarrow       : 23.0.1

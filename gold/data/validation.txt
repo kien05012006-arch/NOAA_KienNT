@@ -1,0 +1,15 @@
+Weeks: 130; range: 2020-01-07 - 2022-06-28
+Columns (8): week_date, ao, nao, pna, enso, enso14, enso28, enso84
+USDM calendar source: usdm_week_dates.csv
+All Tuesdays: True; Duplicate weeks: 0; Null cells: 0
+Aggregation rules: AO/NAO/PNA = 7-day rolling mean ending on USDM Tuesday (inclusive); ENSO = Nino 3.4 SSTA (1991-2020 base) dated next Wednesday (Tuesday + 1d); enso14/28/84 = trailing 2/4/12-week SSTA means.
+Retrospective alignment note: matches TeleconnectionsForDryad.R (Erhardt et al., 2024); Silver inputs remain unchanged.
+
+Summary Statistics:
+             ao       nao       pna      enso    enso14    enso28    enso84
+count  130.0000  130.0000  130.0000  130.0000  130.0000  130.0000  130.0000
+mean     0.3754    0.0763    0.0607   -0.5200   -0.5154   -0.5073   -0.4667
+std      1.4837    0.6819    0.7557    0.5083    0.5073    0.5049    0.4984
+min     -3.6600   -1.5100   -1.8000   -1.7000   -1.6000   -1.4000   -1.1830
+50%      0.3050    0.1450    0.1050   -0.6000   -0.6000   -0.5750   -0.5750
+max      4.4100    1.4000    2.1500    0.6000    0.6000    0.5500    0.4920

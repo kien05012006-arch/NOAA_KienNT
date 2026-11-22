@@ -1,0 +1,71 @@
+{
+  "verified_at_utc": "2026-11-22T15:16:48.533241+00:00",
+  "status": "PASS",
+  "weeks_evaluated": 130,
+  "week_range": "2020-01-07 .. 2022-06-28",
+  "calendar_match_usdm_week_dates": true,
+  "calendar_match_usdmfinal_csv": true,
+  "all_tuesdays": true,
+  "null_values": 0,
+  "duplicate_weeks": 0,
+  "total_numeric_cells": 910,
+  "exact_matched_cells": 910,
+  "concordance_percentage": 100.0,
+  "parquet_csv_parity": true,
+  "max_abs_diff_by_column": {
+    "ao": 0.0,
+    "nao": 0.0,
+    "pna": 0.0,
+    "enso": 0.0,
+    "enso14": 0.0,
+    "enso28": 0.0,
+    "enso84": 0.0
+  },
+  "sample_week_checks": [
+    {
+      "week_date": "2020-01-07",
+      "enso_source_week_date": "2020-01-08",
+      "status": "MATCH",
+      "values": {
+        "ao": 3.33,
+        "nao": 1.04,
+        "pna": 0.22,
+        "enso": 0.6,
+        "enso14": 0.6,
+        "enso28": 0.5,
+        "enso84": 0.492
+      },
+      "max_abs_diff": 0.0
+    },
+    {
+      "week_date": "2021-06-01",
+      "enso_source_week_date": "2021-06-02",
+      "status": "MATCH",
+      "values": {
+        "ao": 0.31,
+        "nao": 0.39,
+        "pna": 0.66,
+        "enso": -0.2,
+        "enso14": -0.25,
+        "enso28": -0.275,
+        "enso84": -0.458
+      },
+      "max_abs_diff": 0.0
+    },
+    {
+      "week_date": "2022-06-28",
+      "enso_source_week_date": "2022-06-29",
+      "status": "MATCH",
+      "values": {
+        "ao": 0.26,
+        "nao": 0.06,
+        "pna": -1.01,
+        "enso": -0.6,
+        "enso14": -0.6,
+        "enso28": -0.625,
+        "enso84": -0.9
+      },
+      "max_abs_diff": 0.0
+    }
+  ]
+}

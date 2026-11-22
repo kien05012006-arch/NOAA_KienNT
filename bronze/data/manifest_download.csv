@@ -1,0 +1,5 @@
+ingest_date,category,filename,url,status,source_size_bytes,saved_size_bytes,rows_kept,kept_range,saved_sha256,error
+2026-10-17,ao,norm.daily.ao.cdas.z1000.19500101_current.csv,https://ftp.cpc.ncep.noaa.gov/cwlinks/norm.daily.ao.cdas.z1000.19500101_current.csv,DOWNLOADED,827014,42968,1461,2019-01-01 .. 2022-12-31,f1abdbd6a565a753d125dd5c862ab8087a603f0c0a7d4da555e9e5d47273eb15,
+2026-10-17,nao,norm.daily.nao.cdas.z500.19500101_current.csv,https://ftp.cpc.ncep.noaa.gov/cwlinks/norm.daily.nao.cdas.z500.19500101_current.csv,DOWNLOADED,828847,43314,1461,2019-01-01 .. 2022-12-31,981d9d53f72668b7e10ef3330727cc5220de0e7c7512beccf415d50693923cc3,
+2026-10-17,pna,norm.daily.pna.cdas.z500.19500101_current.csv,https://ftp.cpc.ncep.noaa.gov/cwlinks/norm.daily.pna.cdas.z500.19500101_current.csv,DOWNLOADED,828682,43261,1461,2019-01-01 .. 2022-12-31,a26b728987876e58ca52d52c165a7a5ec23aa11e21d618ec756a071900e19709,
+2026-10-17,enso,wksst9120.for,https://www.cpc.ncep.noaa.gov/data/indices/wksst9120.for,DOWNLOADED,148479,5535,209,2019-01-01 .. 2022-12-31,fdbc0efbf49b36cf65495699a6c5a3cb0d563e3c4a416f6847e5873c831e2492,

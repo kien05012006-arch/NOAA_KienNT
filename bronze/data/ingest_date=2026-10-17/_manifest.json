@@ -1,0 +1,46 @@
+[
+  {
+    "file": "norm.daily.ao.cdas.z1000.19500101_current.csv",
+    "source_url": "https://ftp.cpc.ncep.noaa.gov/cwlinks/norm.daily.ao.cdas.z1000.19500101_current.csv",
+    "ingest_date": "2026-10-17",
+    "source_sha256": "6b19ffad63de2c47b36ae105347a669234ea31959e74e2a2cc64636df387d64d",
+    "source_size_bytes": 827014,
+    "saved_sha256": "f1abdbd6a565a753d125dd5c862ab8087a603f0c0a7d4da555e9e5d47273eb15",
+    "kept_range": "2019-01-01 .. 2022-12-31",
+    "rows_kept": 1461,
+    "kept_fields": "year, month, day, giá trị chỉ số"
+  },
+  {
+    "file": "norm.daily.nao.cdas.z500.19500101_current.csv",
+    "source_url": "https://ftp.cpc.ncep.noaa.gov/cwlinks/norm.daily.nao.cdas.z500.19500101_current.csv",
+    "ingest_date": "2026-10-17",
+    "source_sha256": "dfc8740f0038d06759f22e43ea926d29971ba5ef6a528353d6c0718cbb90a8ad",
+    "source_size_bytes": 828847,
+    "saved_sha256": "981d9d53f72668b7e10ef3330727cc5220de0e7c7512beccf415d50693923cc3",
+    "kept_range": "2019-01-01 .. 2022-12-31",
+    "rows_kept": 1461,
+    "kept_fields": "year, month, day, giá trị chỉ số"
+  },
+  {
+    "file": "norm.daily.pna.cdas.z500.19500101_current.csv",
+    "source_url": "https://ftp.cpc.ncep.noaa.gov/cwlinks/norm.daily.pna.cdas.z500.19500101_current.csv",
+    "ingest_date": "2026-10-17",
+    "source_sha256": "fed8df60a30a26c11664376965e4be3458f42cb6a437cb350729c6c9738254c3",
+    "source_size_bytes": 828682,
+    "saved_sha256": "a26b728987876e58ca52d52c165a7a5ec23aa11e21d618ec756a071900e19709",
+    "kept_range": "2019-01-01 .. 2022-12-31",
+    "rows_kept": 1461,
+    "kept_fields": "year, month, day, giá trị chỉ số"
+  },
+  {
+    "file": "wksst9120.for",
+    "source_url": "https://www.cpc.ncep.noaa.gov/data/indices/wksst9120.for",
+    "ingest_date": "2026-10-17",
+    "source_sha256": "8b039ee95afa2718b6ea3225fb1573c77f834a95728367c1b6cf21ef0d98115a",
+    "source_size_bytes": 148479,
+    "saved_sha256": "fdbc0efbf49b36cf65495699a6c5a3cb0d563e3c4a416f6847e5873c831e2492",
+    "kept_range": "2019-01-01 .. 2022-12-31",
+    "rows_kept": 209,
+    "kept_fields": "week, nino34_sst, nino34_ssta (Nino 3.4; mốc khí hậu 1991-2020); định dạng .for, cột cố định [12, 9, 4]"
+  }
+]
